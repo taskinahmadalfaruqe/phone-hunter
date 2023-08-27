@@ -1,10 +1,13 @@
-const getPhone = () => {
-    fetch('https://openapi.programming-hero.com/api/phones?search=iphone')
+
+// GET PHONE FROM API 
+const getPhone = (searchValue) => {
+    fetch(`https://openapi.programming-hero.com/api/phones?search=${searchValue}`)
         .then(res => res.json())
         .then(phoneData => lodePhone(phoneData));
 };
-getPhone();
 
+
+// LODE PHONE IN WEBSITE 
 const lodePhone = (phoneList) => {
 
     // CONVERT OBJECT TO ARRAY
@@ -14,7 +17,6 @@ const lodePhone = (phoneList) => {
     let phonePlace= document.getElementById('all-phones');
     // FOR LOOP USE TO GET ALL PHONE LIST
     phones.forEach(phone => {
-        console.log(phone);
         const phoneCard = document.createElement('div');
         phoneCard.innerHTML = `
         <div class="card  bg-white shadow-xl border-2 border-black">
@@ -32,4 +34,13 @@ const lodePhone = (phoneList) => {
         `;
         phonePlace.appendChild(phoneCard);
     });
+};
+
+// GET SEARCH VALUE 
+const searchHandler =() =>{
+    let inputValue= document.getElementById('inputValue');
+    let value= inputValue.value;
+    inputValue.value='';
+    console.log(value)
+    getPhone(value);
 };

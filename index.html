@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
     <title>Phone</title>
 
     <!-- GOOGLE FONT LINK  -->
@@ -17,22 +19,46 @@
         <div>
             <!-- NAVBAR PART START -->
             <section id="navBar">
-                <div class="container">
-                    <div class="logo"></div>
+                <div class="container flex justify-between items-center py-2">
+                    <div class="logo">
+                        <img src="image/logo.png" alt="Site_Logo">
+                    </div>
                     <div class="loginBTN">
-                        <button class="btn btn-praimery">login</button>
+                        <button class="btn btn-primary">login</button>
                     </div>
                 </div>
             </section>
 
             <!-- BANNER PART START -->
             <section id="banner">
-
+                <div class="text text-center max-w-[800px] mx-auto space-y-5 mt-5">
+                    <h1 class="font-semibold text-2xl lg:text-4xl xl:text-6xl">Apple Iphone 13 Pro Max</h1>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 justify-center md:items-end max-w-[1000px] mx-auto">
+                    <img src="image/pngwing 2.png" alt="Phone_02" class="mx-auto hidden md:block">
+                    <img src="image/pngwing 1.png" alt="Phone_01" class="mx-auto">
+                    <img src="image/pngwing 3.png" alt="Phone_03" class="mx-auto hidden md:block">
+                </div>
             </section>
         </div>
     </header>
     <main>
-        <h2>Phone Hunter</h2>
+        <div class="container text-center my-10">
+            <h2 class="font-semibold text-3xl lg:text-5xl">Search your phone</h2>
+            <div class="search w-[800px] mx-auto flex justify-between items-center gap-5 bg-[#eee] my-20 py-2 px-5 rounded-lg">
+                <input type="text" name="" id="" placeholder="Search your phone" class="pl-10 py-2 px-5 border-2 border-red-950 focus:outline-none rounded-lg w-[700px]">
+                <div class="btn btn-primary">Search</div>
+            </div>
+
+
+            <div class="phone-list">
+                <div id="all-phones" class="grid grid-cols-3 gap-5">
+
+                </div>
+            </div>
+        </div>
     </main>
     <footer></footer>
 

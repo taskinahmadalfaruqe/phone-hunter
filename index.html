@@ -55,11 +55,19 @@
                 <span class="loading loading-spinner loading-lg"></span>
             </div>
 
-            <div class="phone-list">
+            <div class="phone-list bg-phoneBG">
                 <div id="all-phones" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
                 </div>
-                <div id="showAllButton" class="button mt-5 hidden">
+                <!-- MODAL OPEN AND CLOSE  -->
+                <!-- <button class="btn" onclick="">open modal</button> -->
+                <dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
+                <form id="modalId" method="dialog" class="modal-box text-start space-y-2">
+                    
+                </form>
+                </dialog>
+                
+                <div id="showAllButton" class="button mt-5 hidden ">
                     <button onclick="isShowAll()" class="btn btn-primary">Show all</button>
                 </div>
             </div>

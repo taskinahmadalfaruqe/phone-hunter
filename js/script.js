@@ -37,7 +37,7 @@ const lodePhone = (phones, isShowAll) => {
     phones.forEach(phone => {
         const phoneCard = document.createElement('div');
         phoneCard.innerHTML=`
-        <div class="py-5 px-3  border-2 border-blac bg-white rounded-xl flex justify-center items-center flex-col">
+        <div class="py-5 px-3  border-2 border-black bg-white rounded-xl flex justify-center items-center flex-col">
         <figure class="px-10 pt-10  ">
             <img src="${phone.image}" alt="phone"/>
         </figure>
@@ -94,6 +94,7 @@ const showModal= async (id)=>{
     setPhoneDetails(phoneDetails);
 }
 
+//SHOW MODAL DATA
 const setPhoneDetails = (phoneData)=>{
     my_modal.showModal();
     console.log(phoneData)

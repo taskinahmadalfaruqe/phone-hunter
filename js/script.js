@@ -37,18 +37,18 @@ const lodePhone = (phones, isShowAll) => {
     phones.forEach(phone => {
         const phoneCard = document.createElement('div');
         phoneCard.innerHTML=`
-        <div class="p-5 border-2 border-black bg-white rounded-xl flex justify-center items-center flex-col">
-            <figure class="px-10 pt-10 bg-red-500 w-full">
-                <img src="${phone.image}" alt="phone"/>
-            </figure>
-            <div class="flex justify-center items-center flex-col space-y-4 text-center mt-5">
-                <h2 class="card-title">${phone.phone_name}</h2> 
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions">
-                    <button onclick="showModal('${phone.slug}')" class="btn btn-primary">Show Details</button>
-                </div>
+        <div class="py-5 px-3  border-2 border-blac bg-white rounded-xl flex justify-center items-center flex-col">
+        <figure class="px-10 pt-10  ">
+            <img src="${phone.image}" alt="phone"/>
+        </figure>
+        <div class="flex justify-center items-center flex-col space-y-4 text-center mt-5">
+            <h2 class="card-title">${phone.phone_name}</h2> 
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions">
+                <button onclick="showModal('${phone.slug}')" class="btn btn-primary">Show Details</button>
             </div>
         </div>
+    </div>
         `;
         phonePlace.appendChild(phoneCard);
     });
@@ -117,6 +117,5 @@ const setPhoneDetails = (phoneData)=>{
     <div class="modal-action">
     <button class="btn bg-red-500 hover:bg-red-500 text-white">Close</button>
     </div>
-
-    `;
+    `
 }

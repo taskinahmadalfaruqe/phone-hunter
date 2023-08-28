@@ -16,7 +16,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'phoneBG': "rgba(13, 110, 253, 0.05)",
+        'phoneBG': "#0d6efd",
       }
     },
   },

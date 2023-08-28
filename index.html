@@ -51,14 +51,33 @@
                 <input id="inputValue" type="text" name="" id="" placeholder="Search your phone" class="pl-10 py-2 px-5 border-2 border-red-950 focus:outline-none rounded-lg md:w-[700px]">
                 <div id="" onclick="searchHandler()" class="btn btn-primary">Search</div>
             </div>
-
+            <div id="loading" class="hidden">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
 
             <div class="phone-list">
                 <div id="all-phones" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
                     
+                    <div class="p-5 border-2 border-black bg-white rounded-xl flex justify-center items-center flex-col">
+                        <figure class="px-10 pt-10 bg-phoneBG">
+                            <img src="${phone.image}" alt="phone"/>
+                        </figure>
+                        <div class="flex justify-center items-center flex-col space-y-4 text-center mt-5">
+                            <h2 class="card-title">${phone.phone_name}</h2> 
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary">Show Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="showAllButton" class="button mt-5 hidden">
+                    <button class="btn btn-primary">Show all</button>
                 </div>
             </div>
+
         </div>
     </main>
     <footer></footer>

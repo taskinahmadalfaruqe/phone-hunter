@@ -14,7 +14,11 @@ module.exports = {
     fontFamily: {
       'Poppins':['Poppins', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'phoneBG': "rgba(13, 110, 253, 0.05)",
+      }
+    },
   },
   daisyui: {
     themes: ["light", "dark", "cupcake"],
